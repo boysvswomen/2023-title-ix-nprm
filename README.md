@@ -6,6 +6,12 @@ Because of this, the original file of all comments, requested at 05/16/2023 08:4
 
 Extract the file first to use the script.
 
-The script will output multiple CSV files, each under 100mb.
+The script will output a CSV file of just the sample. It will add 4 columns:
 
+- Row Number: This will become the first column, and corresponds with the row number in the original file
 
+Three columns to indicate sentiment (a value of 1 labels the sentiment as matching that column):
+
+- Supports/Not Far Enough: The comment supports the rule change OR says the rule change did not go far enough in including trans identified individuals. 
+- Opposes Rule: The comment opposes the rule change because the it goes too far in including trans identified individuals. 
+- Unknown: Unable to identify the sentiment of the comment.
