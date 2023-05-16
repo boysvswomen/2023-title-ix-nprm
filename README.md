@@ -12,6 +12,6 @@ The script will output a CSV file of just the sample. It will add 4 columns:
 
 Three columns to indicate sentiment (a value of 1 labels the sentiment as matching that column):
 
-- Supports/Not Far Enough: The comment supports the rule change OR says the rule change did not go far enough in including trans identified individuals. 
-- Opposes Rule: The comment opposes the rule change because the it goes too far in including trans identified individuals. 
+- Supports/Not Accom. Enough: The comment supports the rule change OR says the rule change is not accommodating enough of trans identified individuals. 
+- Too Accom: The comment opposes the rule change because the it goes too far in accommodating trans identified individuals. 
 - Unknown: Unable to identify the sentiment of the comment.

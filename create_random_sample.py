@@ -12,10 +12,10 @@ output_filename = "lho-qdbp-rvml_{}_random_rows.csv".format(n)
 with open(input_filename, 'r') as file:
     csv_reader = csv.reader(file)
     header_row = next(csv_reader)  # Read the header row
-    rows = [[i] + row for i, row in enumerate(csv_reader, start=1)]
+    rows = [[i+1] + row for i, row in enumerate(csv_reader, start=1)]
 
 # New columns need to be added before the Comment column to label the comments
-new_columns = ["Supports/Not Far Enough", "Opposes Rule", "Unknown"]
+new_columns = ["Supports/Not Accom. Enough", "Too Accom.", "Unknown"]
 comment_col_index = header_row.index("Comment")
 
 # Insert new header columns
